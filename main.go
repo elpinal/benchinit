@@ -27,7 +27,7 @@ func run(args []string) error {
 	if err != nil {
 		return errors.Wrap(err, "run")
 	}
-	f, err := os.Create(filepath.Join(args[0], "main.go"))
+	f, err := os.Create(filepath.Join(args[0], "main_test.go"))
 	if err != nil {
 		return errors.Wrap(err, "run")
 	}
