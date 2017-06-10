@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elpinal/benchinit/pkg/benchinit"
+	"github.com/elpinal/benchinit/testbuilder"
 )
 
 func main() {
@@ -33,7 +33,7 @@ func run(args []string) error {
 	}
 	defer f.Close()
 
-	b := benchinit.New()
+	b := testbuilder.New()
 	s := b.Build()
 	_, err = f.WriteString(s)
 	if err != nil {

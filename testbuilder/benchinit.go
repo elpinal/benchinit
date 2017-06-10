@@ -1,4 +1,4 @@
-package benchinit
+package testbuilder
 
 type Builder struct{}
 
